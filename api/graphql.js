@@ -152,7 +152,7 @@ export default new ApolloServer({
                                             : String(hourNum).padStart(2, '0')
                                         : hourNum === 12
                                             ? hour
-                                            : Number(hour) + 12}:${minute}:00+10:00`;
+                                            : hourNum + 12}:${minute}:00+10:00`;
                                 })
                                 : undefined,
                             statFields.length
