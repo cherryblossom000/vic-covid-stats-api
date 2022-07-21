@@ -1,47 +1,46 @@
 {
-  "name": "vic-covid-stats-api",
-  "version": "0.0.1",
-  "author": "cherryblossom (https://github.com/cherryblossom000)",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14"
-  },
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "watch": "dum build -- -w",
-    "lint": "eslint --max-warnings 0 --report-unused-disable-directives . --ext cjs,ts",
-    "lint:dev": "dum lint -- --cache"
-  },
-  "dependencies": {
-    "@saeris/apollo-server-vercel": "^1.0.1",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "graphql": "^15.8.0",
-    "graphql-fields": "^2.0.3",
-    "graphql-scalars": "^1.14.1",
-    "node-fetch": "^2.6.7",
-    "qs": "^6.10.3"
-  },
-  "devDependencies": {
-    "@cherryblossom/eslint-config": "15.0.0-beta.27",
-    "@types/eslint": "^8.4.1",
-    "@types/graphql-fields": "^1.3.4",
-    "@types/node": "^14.18.10",
-    "@types/node-fetch": "^2.5.12",
-    "@types/qs": "^6.9.7",
-    "@typescript-eslint/eslint-plugin": "^5.10.2",
-    "@typescript-eslint/parser": "^5.10.2",
-    "@vercel/node": "^1.12.1",
-    "eslint": "^8.8.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^37.7.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-unicorn": "^40.1.0",
-    "prettier": "^2.5.1",
-    "typescript": "~4.5.5",
-    "vercel": "^23.1.2"
-  }
+	"name": "vic-covid-stats-api",
+	"version": "0.0.1",
+	"author": "cherryblossom (https://github.com/cherryblossom000)",
+	"license": "MIT",
+	"engines": {
+		"node": ">=16"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"watch": "dum build -- -w",
+		"lint": "eslint --max-warnings 0 --ext cjs,ts .",
+		"lint:dev": "dum lint -- --cache"
+	},
+	"dependencies": {
+		"@saeris/apollo-server-vercel": "^1.0.1",
+		"graphql": "^15.8.0",
+		"graphql-fields": "^2.0.3",
+		"graphql-scalars": "^1.17.0",
+		"qs": "^6.10.3",
+		"undici": "^5.8.0"
+	},
+	"devDependencies": {
+		"@cherryblossom/eslint-config": "16.0.0-beta.7",
+		"@types/eslint": "^8.4.1",
+		"@types/graphql-fields": "^1.3.4",
+		"@types/node": "^16",
+		"@types/qs": "^6.9.7",
+		"@typescript-eslint/eslint-plugin": "^5.20.0",
+		"@typescript-eslint/parser": "^5.20.0",
+		"@vercel/node": "^1.14.1",
+		"eslint": "^8.13.0",
+		"eslint-import-resolver-typescript": "^3.3.0",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsdoc": "^39.2.6",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-plugin-unicorn": "^43.0.2",
+		"prettier": "^2.6.2",
+		"typescript": "~4.7.4",
+		"vercel": "^27.1.5"
+	}
 }
